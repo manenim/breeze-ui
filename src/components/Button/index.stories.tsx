@@ -11,11 +11,27 @@ const meta: Meta<typeof Button> = {
 };
 
 export default meta
+
+
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
-    args: {
-        children: "Click Me",
-    }
-}
+export const Solid: Story = {
+  args: {
+    variant: "solid",
+    children: "Button",
+  },
+};
 
+export const Outline: Story = {
+  args: {
+    variant: "outline",
+    children: "Button",
+  },
+};
+
+export const Ghost: Story = {
+  args: {
+    variant: "ghost",
+    children: "Button",
+  },
+};
