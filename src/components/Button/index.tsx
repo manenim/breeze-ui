@@ -1,7 +1,10 @@
+import { ComponentProps } from "react"
 
-export const Button = () => {
+type ButtonProps = ComponentProps<"button">;
+
+export const Button = ({...props}: ButtonProps) => {
   return (
-    <button>Button</button>
+    <button className="text-blue-500" {...props} />
   )
 }
 
